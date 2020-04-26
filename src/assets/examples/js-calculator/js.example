@@ -1,0 +1,15 @@
+const calculator = document.querySelector('#calculator');
+
+calculator.addEventListener('click', (e) => {
+  if (e.target.type === 'button') {
+    // console.log(e.target.value)
+    const answer = document.querySelector('#answer');
+    if (e.target.value === 'c') {
+      answer.value = '';
+    } else if (e.target.value === '=') {
+      answer.value = eval(answer.value);
+    } else {
+    answer.value += e.target.value;
+    }
+  }
+});
