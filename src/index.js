@@ -81,7 +81,7 @@ const Presentation = () => (
 			<Heading size={1} fit caps color="white">
 				April 2020: JavaScript Calculator
 			</Heading>
-			<Link target="_blank" href="https://github.com/jWatsonDev/jWatsonDev-feb-fcc-css-basics-and-flexbox">
+			<Link target="_blank" href="https://github.com/jWatsonDev/april2020-fcc-js-calculator">
 				<Text fontSize="1.5em" bold caps color="white">
 					View on Github
 				</Text>
@@ -147,7 +147,7 @@ const Presentation = () => (
 			code={require("raw-loader!./assets/examples/js-calculator/styles.example").default}
 			ranges={[
 				{ loc: [0, 500], title: "CSS - We're going for decent!" },
-				{ loc: [0, 5], backgroundColor: "#223b57", note: "With these variables, we can control our theme in one place. I used the colormind generator to get them. As I said, we are going for decent. Feel free to make them whatever you want." },
+				{ loc: [0, 5], backgroundColor: "#223b57", note: "With these variables, we can control our theme in one place. I used the colormind generator to find a theme. As I said, we are going for decent. Feel free to make them whatever you want." },
 				{ loc: [7, 11], backgroundColor: "#223b57", note: "The 'ole CSS reset! If I want paddding or margin, I'll add it. Also, I want the margin and padding to be counted in the overall widths that I specify." },
 				{ loc: [13, 20], backgroundColor: "#223b57", note: "Oh flexbox, how I love you. Here, we are basically saying that we want items to be centered both vertically and horrizontally." },
 				{ loc: [19, 19], backgroundColor: "#223b57", note: "Note that in order for the body to take up the full 'viewport height', we need to specify as such." },
@@ -159,7 +159,7 @@ const Presentation = () => (
 				{ loc: [41, 41], backgroundColor: "#223b57", note: "Adding some subtle box shadow." },
 				{ loc: [44, 52], backgroundColor: "#223b57", note: "Styling ALL inputs. I should probably put all font-related styles together. Meh." },
 				{ loc: [54, 59], backgroundColor: "#223b57", note: "Styling my buttons. There's a small, small amount of math here as these inputs will just break to next line when they run out of room as they are inline elements." },
-				{ loc: [58, 58], backgroundColor: "#223b57", note: "I see people forget to this. You shouldn't. This communicates to the user that he/she can click." },
+				{ loc: [58, 58], backgroundColor: "#223b57", note: "I see people forget to do this. You shouldn't. This communicates to the user that he/she can click." },
 				{ loc: [61, 66], backgroundColor: "#223b57", note: "Our display box styles." }
 			]} />
 
@@ -173,8 +173,8 @@ const Presentation = () => (
 				{ loc: [0, 500], title: "JS - Making it work!" },
 				{ loc: [0, 16], backgroundColor: "#223b57", note: "It really doesn't take a lot of JavaScript." },
 				{ loc: [0, 0], backgroundColor: "#223b57", note: "First, let's create a handle to reach into our html and grab the calculator container whenver we want. Note the querySelector syntaxt. We are getting the calculator by id (#idName)." },
-				{ loc: [2, 15], backgroundColor: "#223b57", note: "Now, we need to know when the user clicks on our calculator box, so we're adding a 'click' even listener. Note the arrow function syntaxt." },
-				{ loc: [2, 2], backgroundColor: "#223b57", note: "That little 'e' is very important (not the name), but the fact that by passing that in we are getting the user's click event. We need that in order to know what the user clicked on." },
+				{ loc: [2, 15], backgroundColor: "#223b57", note: "Now, we need to know when the user clicks on our calculator box, so we're adding a 'click' event listener. Note the arrow function syntaxt." },
+				{ loc: [2, 2], backgroundColor: "#223b57", note: "That little 'e' is very important (not the name, it's arbitrary), but the fact that by passing that through we are getting the user's click event. We need that in order to know what the user clicked on." },
 				{ loc: [3, 3], backgroundColor: "#223b57", note: "We aren't interested in all clicks. We only want to know if the user is clicking on one of our buttons, hence the condition." },
 				{ loc: [5, 5], backgroundColor: "#223b57", note: "Now, we'll use the query selector to create a handle to reach in and manipulate the answer box. Note that we used const instead of let or var. This variable should not change. Use const when that's the case." },
 				{ loc: [6, 6], backgroundColor: "#223b57", note: "e.target.value is the value of the user's click." },
